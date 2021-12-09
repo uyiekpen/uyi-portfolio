@@ -1,10 +1,10 @@
 import React from 'react'
-import About from './About'
+import AboutComp from "./AboutComp"
 import Content from './Content'
 import HeaderComp from './HeaderComp'
 import Services from "../Components/Services"
 import Footer from "../Components/Footer"
-// import Contact from './Contact'
+import Contact from './Contact'
 
 
 const Home = () => {
@@ -12,10 +12,11 @@ const Home = () => {
         <div id ="home">
             <HeaderComp/>
             <Content/>
-            <About/>
+            <AboutComp/>
+            <Contact/>
             {/* <Services/> */}
             {/* <Contact/> */}
-            {/* <Footer/> */}
+            <Footer/>
         </div>
     )
 }
