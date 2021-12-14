@@ -35,6 +35,7 @@ const SiderBar = ({ isOpen , onToggle}) => {
 export default SiderBar
 
 const Container = styled.div`
+font-weight: bold;
 position: fixed;
 width: 100%;
 height: 100%;

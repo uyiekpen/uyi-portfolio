@@ -10,7 +10,9 @@ const Content = () => {
                 <Name>Osazie <br/> Uyiekpen</Name>
                 <Software>developer + tutor</Software>
                 <Intro>I’m a professional front end developer and also a tutor  based in Lagos</Intro>
-                <ButtonHolder>Hire Me</ButtonHolder>
+                {/* <ButtonHolder>
+                    <a href="/images/file.jpeg" download> Hire me </a>
+                </ButtonHolder> */}
             </Design>
             <ImageHolder>
                 <Img src="./Images/hero.png" alt="images"/>

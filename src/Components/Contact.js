@@ -1,13 +1,30 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { HiOutlineLocationMarker } from 'react-icons/hi'
 import { MdEmail } from 'react-icons/md'
 import {AiOutlinePhone} from "react-icons/ai"
 
 import styled from "styled-components"
+import { app } from './base'
 
 const Contact = () => {
+    const [ name , SetName] = useState ("")
+    const [email, SetEmail] = useState("")
+    const [phoneNunber, SetPhoneNumber ] =useState("")
+    const [message , SetMessage] = useState("")
+
+
+    const sendMessage = async () => {
+        await app.firestore().collection("Message").doc().set({
+            name,
+            email,
+            phoneNunber,
+            message
+        })
+    }
+    
+
     return (
-        <Container>
+        <Container id="contact">
             <ContactContainer>
                 <Text>
                     <Title>Contact Me -</Title>
@@ -35,17 +52,29 @@ const Contact = () => {
                             <input
                             type="text"
                             placeholder="fullname"
+                            value={name}
+                            onChange={(e) =>{
+                                SetName(e.target.value)
+                            }}
                             />
                         </FullName>
                         <Home>
                             <input
                             placeholder="Email"
                             type="email"
+                            value={email}
+                            onChange={(e) =>{
+                                SetEmail(e.target.value)
+                            }}
 
                             />
                             <input
                             placeholder="PhoneNunber"
-                            type="number"
+                            type="text"
+                            value={phoneNunber}
+                            onChange={(e) =>{
+                                SetPhoneNumber(e.target.value)
+                            }}
                             />
 
                         </Home>
@@ -53,10 +82,14 @@ const Contact = () => {
                             <input
                             placeholder="Send Message"
                             type="text"
+                            value={message}
+                            onChange={(e) =>{
+                                SetMessage(e.target.value)
+                            }}
                             />
                         </Message>
                         <ButtonHolder>
-                            <button>Submit</button>
+                            <button onClick={sendMessage}>Submit</button>
                         </ButtonHolder>
 
                 
@@ -81,6 +114,7 @@ width: 100vw;
 display: flex;
 justify-content: center;
 background-color: #262626;
+font-weight: bold;
 }
 `
 
@@ -305,6 +339,8 @@ width: 150px;
 background-color: #66B2B2;
 border-radius: 20px;
 border: none;
+color: white;
+font-size: 20px;
 }
 
 `

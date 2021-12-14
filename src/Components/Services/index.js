@@ -6,31 +6,40 @@ import {
     ServicesIcon,
     ServicesCard,
     ServicesH2, 
-    ServicesP
+    ServicesP,
+    Text
 } from './ServicesElements';
+import {FiExternalLink} from "react-icons/fi"
 
 const Services = () => {
     return (
         <ServicesContainer id="services">
-            <ServicesH1>Our Services</ServicesH1>
+            <ServicesH1>Portfolio -</ServicesH1>
+
             <ServicesWrapper>
                 {/* pertama */}
                 <ServicesCard>
-                    <ServicesIcon />
-                    <ServicesH2>Reduce expenses</ServicesH2>
-                    <ServicesP>We help reduce your fess and increase your overall revenue.</ServicesP>
+                    <ServicesIcon href="https://codelab-support.web.app/" target="_blank" aria-label="">  
+                        <FiExternalLink />
+                    </ServicesIcon>
+                    <ServicesH2>CodeLab Fund Raising App</ServicesH2>
+                    <ServicesP>CodeLab Fund Raising App was developed for fund raising purpose to help sponsor young people living in Ajegunle that wish to start up a career in tech.</ServicesP>
                 </ServicesCard>
                 {/* kedua */}
                 <ServicesCard>
-                    <ServicesIcon />
-                    <ServicesH2>Reduce expenses</ServicesH2>
-                    <ServicesP>We help reduce your fess and increase your overall revenue.</ServicesP>
+                    <ServicesIcon href="https://security-dev-project.web.app/" target="_blank" aria-label="">  
+                        <FiExternalLink />
+                    </ServicesIcon>
+                    <ServicesH2>AJ Report Center</ServicesH2>
+                    <ServicesP>web application to help curb security challenges facing our community</ServicesP>
                 </ServicesCard>
                 {/* ketiga */}
                 <ServicesCard>
-                    <ServicesIcon />
-                    <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership card that return 5% cash back.</ServicesP>
+                    <ServicesIcon href="https://utacngo.web.app/" target="_blank" aria-label="">  
+                        <FiExternalLink />
+                    </ServicesIcon>
+                    <ServicesH2>NGO (UTAC)</ServicesH2>
+                    <ServicesP>Web platform for an NGO (Umbrella for the African Child (UTAC)). An Organization that is based in Ghana and Nigeria.</ServicesP>
                 </ServicesCard>
             </ServicesWrapper>
         </ServicesContainer>

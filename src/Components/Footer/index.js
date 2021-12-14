@@ -56,7 +56,7 @@ const Footer = () => {
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo to='/'>Uyiekpen Osazie</SocialLogo>
-                        <WebsiteRights>Osastechy © {new Date().getFullYear()}All rights reserved</WebsiteRights>
+                        <WebsiteRights>UO © {new Date().getFullYear()}All rights reserved</WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink href="https://web.facebook.com/osazieelizabeth.uyiekpen" target="_blank" aria-label="facebook">
                                 <FaFacebook/>

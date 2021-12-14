@@ -22,7 +22,7 @@ const HeaderComp = () => {
     return (
         <Nav>
             <Container>
-            <Logo />
+            <Logo>UO</Logo>
             <Navmenu>
                 <NavItem>
                     <BiHome/>
@@ -34,7 +34,7 @@ const HeaderComp = () => {
                 </NavItem>
                 <NavItem spy={true} smooth={true}>
                     <MdOutlineDesignServices/>
-                    <NavLinks to="services">Services</NavLinks>
+                    <NavLinks to="services">Portfolio</NavLinks>
                 </NavItem>
                 <NavItem>
                     <MdOutlineContactSupport/>
@@ -77,12 +77,15 @@ align-items: center;
 justify-content: space-between;
 `
 
-const Logo = styled.img`
+const Logo = styled.div`
 height: 45px;
 width: 100px;
 object-fit: cover;
-background-color: white;
-
+display: flex;
+align-items: center;
+font-size: 30px;
+text-transform: uppercase;
+font-weight: bold;
 
 `
 

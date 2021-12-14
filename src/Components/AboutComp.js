@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-
+import pix from "./images/about.jpeg"
 const AboutComp = () => {
     return (
         <Container id="about">
@@ -12,7 +12,7 @@ const AboutComp = () => {
                 <SecondContent>
                     <Box>
                         <ImageHolder>
-                        <   Img src="./images/about.jpeg" alt="girl.jpg" />
+                        <   Img src={pix}  />
 
                         </ImageHolder>
                         <AnotherTitle>
@@ -23,7 +23,7 @@ const AboutComp = () => {
                         <Context>
                         I’m Osazie Uyiekpen, a professional and talented frontend developer with great design skills. I am passionate about leveraging my diverse backgrounds to decipher challenging problems and create delightful experiences. 
                         <p>I honed my skills at web app development, Teaching, and Project Management, 
-                        I develop websites with HTML, CSS and JavaScript. I have top skills in building websites with  reactjs and also how to use other librairies such styled- component, material ui, antd , axios for intergration, firebase for storage , authetication.</p>
+                        I develop websites with HTML, CSS and JavaScript. I have top skills in building websites with  reactjs.</p>
                         <p> Being a diligent, hardworking and result oriented lady, I always work towards achieving best result on each project I lay my hands on.</p>
                         </Context>
                     </Box>

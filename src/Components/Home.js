@@ -7,15 +7,15 @@ import Footer from "../Components/Footer"
 import Contact from './Contact'
 
 
+
 const Home = () => {
     return (
         <div id ="home">
             <HeaderComp/>
             <Content/>
             <AboutComp/>
+            <Services/>
             <Contact/>
-            {/* <Services/> */}
-            {/* <Contact/> */}
             <Footer/>
         </div>
     )
