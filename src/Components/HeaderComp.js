@@ -1,11 +1,5 @@
 import React ,{useState} from 'react'
 import styled from "styled-components"
-import {BiHome} from "react-icons/bi"
-import {MdOutlineContactSupport,
-    MdOutlineDesignServices,
-    MdOutlineApproval
-
-} from "react-icons/md"
 import {CgMenuRight} from "react-icons/cg"
 import SiderBar from './SiderBar'
 import { Link as LinkR } from "react-router-dom"
@@ -25,21 +19,16 @@ const HeaderComp = () => {
             <Logo>UO</Logo>
             <Navmenu>
                 <NavItem>
-                    <BiHome/>
                     <NavLinks to="home" spy={true} smooth={true}>Home</NavLinks>
                 </NavItem>
                 <NavItem>
-                    <MdOutlineApproval/>
-                    <NavLinks to="about" spy={true} smooth={true}>About</NavLinks>
+                    <NavLinks to="about" spy={true} smooth={true}>skills</NavLinks>
                 </NavItem>
                 <NavItem spy={true} smooth={true}>
-                    <MdOutlineDesignServices/>
-                    <NavLinks to="services">Portfolio</NavLinks>
+                    
+                    <NavLinks to="services">Projects</NavLinks>
                 </NavItem>
-                <NavItem>
-                    <MdOutlineContactSupport/>
-                    <NavLinks to="contact" spy={true} smooth={true}>Contact me</NavLinks>
-                </NavItem>
+            
 
             </Navmenu>
             <NavBar>
@@ -58,27 +47,62 @@ export default HeaderComp
 
 const Nav = styled.div`
 height: 70px;
-width: 100vw;
-background-color: transparent;
-display: flex;
-justify-content: center;
-align-items: center;
-border: none;
-position: sticky;
+width:100vw ;
+display: flex ;
+justify-content:center ;
+align-items:center;
+position:fixed ;
+font-size:poppins ;
+z-index: 1;
+min-height: calc(100vh-80px);
 top: 0;
-z-index: 10;
+bottom: 0;
+left:0;
+right:0 ;
+@media screen  and (max-width : 768px){
+    height: 70px;
+width:100vw ;
+display: flex ;
+justify-content:center ;
+align-items:center;
+position:fixed ;
+font-size:poppins ;
+z-index: 1;
+min-height: calc(100vh-80px);
+top: 0;
+bottom: 0;
+left:0;
+right:0 ;
+
+}
 `
 
 const Container = styled.div`
 height: 70px;
-width: 90vw;
+width: 80vw;
 display: flex;
 align-items: center;
 justify-content: space-between;
+@media screen  and (max-width : 768px){
+height: 70px;
+width: 90vw;
+display: flex;
+align-items: center;
+justify-content: center;
+justify-content: space-between;
+}
+@media screen  and (max-width : 768px){
+height: 70px;
+width: 90vw;
+display: flex;
+align-items: center;
+justify-content: center;
+justify-content: space-between;
+}
 `
 
 const Logo = styled.div`
-height: 45px;
+height: 50px;
 width: 100px;
 object-fit: cover;
 display: flex;
