@@ -61,10 +61,62 @@ a:hover {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
-  width: 330px;
-  height: 300px;
+  width: 320px;
+  height: 280px;
   margin-bottom: 24px;
 }
+@media only screen and (max-width: 1024px){
+.proj-imgbx {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 24px;
+} 
+}
+@media only screen and (max-width: 768px){
+  .proj-imgbx {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 235px;
+    height: 200px;
+    margin-bottom: 24px;
+  } 
+  }
+@media only screen and (max-width: 425px){
+  .proj-imgbx {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 370px;
+    height: 250px;
+    margin-bottom: 24px;
+  } 
+  }
+
+@media only screen and (max-width: 375px){
+    .proj-imgbx {
+      position: relative;
+      border-radius: 30px;
+      overflow: hidden;
+      width: 350px;
+      height: 250px;
+      margin-bottom: 24px;
+    } 
+    }
+
+@media only screen and (max-width: 320px){
+      .proj-imgbx {
+        position: relative;
+        border-radius: 30px;
+        overflow: hidden;
+        width: 290px;
+        height: 250px;
+        margin-bottom: 24px;
+      } 
+      }
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);

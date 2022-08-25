@@ -97,11 +97,11 @@ const Projects = () => {
                 <Tabs value={value} onChange={handleChange} centered>
                     <Tab sx={{
                         color :"#fff",
-                        width: "33.33333%",
+                        width: "50%",
                         
                         }} label="Item One" />
-                    <Tab sx={{color :"#fff",width: "33.33333%"}} label="Item Two" />
-                    <Tab sx={{color :"#fff",width: "33.33333%"}}label="Item Three" />
+                    <Tab sx={{color :"#fff",width: "50%"}} label="Item Two" />
+              
 
                 </Tabs>
                 </Box>
@@ -140,8 +140,22 @@ export default Projects
 const Div = styled.div`
 display: flex;
 flex-wrap: wrap;
-width: auto;
+width: 80vw;
 justify-content: space-between;
+@media screen and (max-width: 768px){
+display: flex;
+flex-wrap: wrap;
+width: 95vw;
+justify-content: space-between;
+}
+@media screen and (max-width: 425px){
+display: flex;
+flex-wrap: wrap;
+width: 95vw;
+justify-content: center;
+align-items: center;
+justify-content: space-between;
+}
 `
 
 const Text = styled.div`
@@ -149,28 +163,85 @@ display: flex;
 justify-content: center;
 align-items:center ;
 flex-direction: column;
+text-align: center;
+
+@media screen and (max-width: 425px){
+  text-align: center;
+}
 
 `
 
 const MainTextHolder = styled.div`
-height: 600px;
+height: 900px;
 display: flex;
 width: 100vw;
 flex-direction: column;
 align-items:center ;
+margin-top: 60px;
+@media screen and (max-width: 768px){
+height: 900px;
+display: flex;
+width: 100vw;
+flex-direction: column;
+align-items:center ;
+margin-top: 60px;
+}
+@media screen and (max-width: 425px){
+  height: 1900px;
+display: flex;
+width: 100vw;
+flex-direction: column;
+align-items:center ;
+margin-top: -60px;
+}
 `
 const Wrapper = styled.div`
-height: 600px;
+height: 900px;
 width: 80vw;
 display: flex;
 justify-content: center;
 align-items: center;
+@media screen and (max-width: 768px){
+  height: 600px;
+width: 80vw;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+@media screen and (max-width: 425px){
+  height: 1900px;
+  width: 80vw;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 `
 
 const Component = styled.div`
-height: 600px;
+height: 900px;
 width: 100vw;
 display: flex;
 justify-content: center;
 align-items: center;
+@media screen and (max-width: 768px){
+  height: 600px;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+@media screen and (max-width: 425px){
+  height: 1900px;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+@media screen and (max-width: 320px){
+  height: 2000px;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 `
