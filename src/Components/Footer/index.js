@@ -15,11 +15,13 @@ import {
     SocialIconLink
 } from './FooterElements'
 import {FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLinkedin} from 'react-icons/fa'
+import Subscribe from '../Subscribe'
 
 const Footer = () => {
     return (
         <FooterContainer>
             <FooterWrap>
+                <Subscribe/>
                 <FooterLinksContainer>
                     <FooterLinksWrapper>
                         {/* <FooterLinkItems>
